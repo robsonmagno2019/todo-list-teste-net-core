@@ -1,0 +1,9 @@
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\obj\Debug\netcoreapp3.1\TodoList.Domain.csprojAssemblyReference.cache
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\obj\Debug\netcoreapp3.1\TodoList.Domain.AssemblyInfoInputs.cache
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\obj\Debug\netcoreapp3.1\TodoList.Domain.AssemblyInfo.cs
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\obj\Debug\netcoreapp3.1\TodoList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\bin\Debug\netcoreapp3.1\TodoList.Domain.deps.json
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\bin\Debug\netcoreapp3.1\TodoList.Domain.dll
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\bin\Debug\netcoreapp3.1\TodoList.Domain.pdb
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\obj\Debug\netcoreapp3.1\TodoList.Domain.dll
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Domain\obj\Debug\netcoreapp3.1\TodoList.Domain.pdb

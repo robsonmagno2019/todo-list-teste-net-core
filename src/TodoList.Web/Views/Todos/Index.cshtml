@@ -1,0 +1,120 @@
+﻿@model IEnumerable<TodoList.Application.ViewModels.TodoViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Tarefas";
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["Success"]</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+</div>
+<div class="row">
+    <p class="col-md-6">
+        <label for="filtro">Agrupar por</label>
+        <select id="filtro" name="filtro" class="form-control">
+            <option value="Todos" selected="@(ViewBag.SelectedFilter == "Todos" ? true : false)">Todos</option>
+            <option value="Created" selected="@(ViewBag.SelectedFilter == "Created" ? true : false)">Criado</option>
+            <option value="Completed" selected="@(ViewBag.SelectedFilter == "Completed" ? true : false)">Concluído</option>
+        </select>
+    </p>
+    <p class="col-md-2 offset-4 mt-4 text-right">
+        <a asp-action="Create" class="btn btn-primary"><span class="fa fa-plus"></span> Nova</a>
+    </p>
+</div>
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th class="data">
+                @Html.DisplayNameFor(model => model.CreateDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th class="category">
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreateDate)
+                </td>
+                @if (item.Status == 1)
+                {
+                    <td>Criado</td>
+                }
+                else if (item.Status == 2)
+                {
+                    <td>Concluído</td>
+                }
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.Description)
+                </td>
+                <td>
+                    @*<a asp-controller="Todos" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-info"><span></span> Editar</a>
+                        <a asp-controller="Todos" asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><span></span> Detalhes</a>*@
+
+                    @if (item.Status == 1)
+                    {
+                        @*<a asp-controller="Todos" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger"><span></span> Deletar</a>*@
+                        <a asp-controller="Todos" asp-action="Conclude" asp-route-id="@item.Id" class="btn btn-sm btn-success" title="Concluír tarefa."><span class="fa fa-check"></span></a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+
+    <script>
+
+        $(document).on('click', 'tr th.data', function () {
+
+            var valor = $('.data').text();
+
+            window.location.href = '/Todos/Index?ordenar=' + valor;
+
+        });
+
+        $(document).on('click', 'tr th.category', function () {
+
+            var valor = $('.category').text();
+
+            window.location.href = '/Todos/Index?ordenar=' + valor;
+
+        });
+
+        $(document).on('change', '#filtro', function () {
+
+            var valor = $('#filtro').val();
+
+            window.location.href = '/Todos/Index?filtrar=' + valor;
+
+        });
+
+    </script>
+
+}

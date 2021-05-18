@@ -1,0 +1,12 @@
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\obj\Debug\netcoreapp3.1\TodoList.Infra.csprojAssemblyReference.cache
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\obj\Debug\netcoreapp3.1\TodoList.Infra.AssemblyInfoInputs.cache
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\obj\Debug\netcoreapp3.1\TodoList.Infra.AssemblyInfo.cs
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\obj\Debug\netcoreapp3.1\TodoList.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\bin\Debug\netcoreapp3.1\TodoList.Infra.deps.json
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\bin\Debug\netcoreapp3.1\TodoList.Infra.dll
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\bin\Debug\netcoreapp3.1\TodoList.Infra.pdb
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\bin\Debug\netcoreapp3.1\TodoList.Domain.dll
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\bin\Debug\netcoreapp3.1\TodoList.Domain.pdb
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\obj\Debug\netcoreapp3.1\TodoList.Infra.csproj.CopyComplete
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\obj\Debug\netcoreapp3.1\TodoList.Infra.dll
+C:\Users\Robinho\source\repos\Todo-List\src\TodoList.Infra\obj\Debug\netcoreapp3.1\TodoList.Infra.pdb
